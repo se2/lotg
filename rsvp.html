@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://use.fontawesome.com/efa828ba0a.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link href="css/slick.css" rel="stylesheet" type="text/css">
+  <link href="css/hamburgers.min.css" rel="stylesheet" type="text/css">
+
+  <script src="https://use.fontawesome.com/efa828ba0a.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -32,7 +34,7 @@
   <div class="pageWrapper">
     <header class="clearfix">
       <div class="container">
-        <a href="//teamloveofthegame.org" class="logo">Love of the Game</a>
+        <a href="/" class="logo">Love of the Game</a>
         <ul class="main-menu social-menu">
           <li>
             <a href="https://www.facebook.com/LOTGSports/" target="_blank">
@@ -44,7 +46,23 @@
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
-          <li>@LOTGSports</li>
+          <li class="hidden-sm hidden-xs">@LOTGSports</li>
+        </ul>
+        <div class="hamburger hamburger--collapse visible-sm visible-xs menu-toggle">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container menu-wrapper">
+        <ul class="main-menu">
+          <li><a href="about.html" class="volunteer">About</a></li>
+          <li><a href="testimonials.html" class="volunteer">Testimonials</a></li>
+          <!-- <li><a href="faq.html" class="volunteer">FAQ</a></li> -->
+          <li><a href="sponsor.html" class="volunteer">Sponsor</a></li>
+          <li><a href="donate.html" class="volunteer">Donate</a></li>
+          <li><a href="volunteer.html" class="volunteer">Volunteer</a></li>
+          <li><a href="rsvp.html" class="volunteer">RSVP</a></li>
         </ul>
       </div>
     </header>

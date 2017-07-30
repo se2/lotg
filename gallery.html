@@ -15,6 +15,7 @@
   <script src="https://use.fontawesome.com/efa828ba0a.js"></script>
 
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/hamburgers.min.css" rel="stylesheet" type="text/css">
 
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -60,7 +61,7 @@
 
     <header class="clearfix">
       <div class="container">
-        <a href="//teamloveofthegame.org" class="logo">Love of the Game</a>
+        <a href="/" class="logo">Love of the Game</a>
         <ul class="main-menu social-menu">
           <li>
             <a href="https://www.facebook.com/LOTGSports/" target="_blank">
@@ -72,7 +73,23 @@
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
-          <li>@LOTGSports</li>
+          <li class="hidden-sm hidden-xs">@LOTGSports</li>
+        </ul>
+        <div class="hamburger hamburger--collapse visible-sm visible-xs menu-toggle">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container menu-wrapper">
+        <ul class="main-menu">
+          <li><a href="about.html" class="volunteer">About</a></li>
+          <li><a href="testimonials.html" class="volunteer">Testimonials</a></li>
+          <!-- <li><a href="faq.html" class="volunteer">FAQ</a></li> -->
+          <li><a href="sponsor.html" class="volunteer">Sponsor</a></li>
+          <li><a href="donate.html" class="volunteer">Donate</a></li>
+          <li><a href="volunteer.html" class="volunteer">Volunteer</a></li>
+          <li><a href="rsvp.html" class="volunteer">RSVP</a></li>
         </ul>
       </div>
     </header>
@@ -81,27 +98,71 @@
 
       <div class="container">
 
-        <h4 class="gallery-title">Sample Gallery</h4>
+        <h4 class="gallery-title">Our Gallery</h4>
+
         <div class="my-gallery">
-          <a href="https://farm4.staticflickr.com/3894/15008518202_c265dfa55f_h.jpg" data-size="1600x1600" data-med="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_b.jpg" data-med-size="1024x1024" data-author="Folkert Gorter" class="my-gallery__img--main">
-            <img src="https://farm4.staticflickr.com/3894/15008518202_b016d7d289_m.jpg" alt="" />
-            <figure>This is dummy caption.</figure>
+          <a href="images/lotg-1.jpg" data-size="2048x1387" data-med="images/lotg-1.jpg" data-med-size="2048x1387">
+            <div class="bg-cover" style="background-image: url('images/lotg-1.jpg');"></div>
           </a>
-          <a href="https://farm6.staticflickr.com/5591/15008867125_b61960af01_h.jpg" data-size="1600x1068" data-med="https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_b.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
-            <img src="https://farm6.staticflickr.com/5591/15008867125_68a8ed88cc_m.jpg" alt="" />
-            <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+          <a href="images/lotg-2.jpg" data-size="901x993" data-med="images/lotg-2.jpg" data-med-size="901x993">
+            <div class="bg-cover" style="background-image: url('images/lotg-2.jpg');"></div>
           </a>
-          <a href="https://farm4.staticflickr.com/3902/14985871946_24f47d4b53_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_b.jpg" data-med-size="1024x683" data-author="Ales Krivec">
-            <img src="https://farm4.staticflickr.com/3902/14985871946_86abb8c56f_m.jpg" alt="" />
-            <figure>This is dummy caption. It is not meant to be read.</figure>
+          <a href="images/lotg-3.jpg" data-size="2048x1536" data-med="images/lotg-3.jpg" data-med-size="2048x1536">
+            <div class="bg-cover" style="background-image: url('images/lotg-3.jpg');"></div>
           </a>
-          <a href="https://farm6.staticflickr.com/5584/14985868676_b51baa4071_h.jpg" data-size="1600x1067" data-med="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_b.jpg" data-med-size="1024x683" data-author="Michael Hull">
-            <img src="https://farm6.staticflickr.com/5584/14985868676_4b802b932a_m.jpg" alt="" />
-            <figure>Dummy caption. It's Greek to you. Unless, of course, you're Greek, in which case, it really makes no sense.</figure>
+          <a href="images/lotg-4.jpg" data-size="960x960" data-med="images/lotg-4.jpg" data-med-size="960x960">
+            <div class="bg-cover" style="background-image: url('images/lotg-4.jpg');"></div>
           </a>
-          <a href="https://farm4.staticflickr.com/3920/15008465772_d50c8f0531_h.jpg" data-size="1600x1067" data-med="https://farm4.staticflickr.com/3920/15008465772_383e697089_b.jpg" data-med-size="1024x683" data-author="Thomas Lefebvre">
-            <img src="https://farm4.staticflickr.com/3920/15008465772_383e697089_m.jpg" alt="" />
-            <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
+          <a href="images/lotg-5.jpg" data-size="592x447" data-med="images/lotg-5.jpg" data-med-size="592x447">
+            <div class="bg-cover" style="background-image: url('images/lotg-5.jpg');"></div>
+          </a>
+          <a href="images/lotg-6.png" data-size="2048x1536" data-med="images/lotg-6.png" data-med-size="2048x1536">
+            <div class="bg-cover" style="background-image: url('images/lotg-6.png');"></div>
+          </a>
+          <a href="images/lotg-7.jpg" data-size="720x960" data-med="images/lotg-7.jpg" data-med-size="720x960">
+            <div class="bg-cover" style="background-image: url('images/lotg-7.jpg');"></div>
+          </a>
+          <a href="images/lotg-8.jpg" data-size="960x720" data-med="images/lotg-8.jpg" data-med-size="960x720">
+            <div class="bg-cover" style="background-image: url('images/lotg-8.jpg');"></div>
+          </a>
+          <a href="images/lotg-9.jpg" data-size="960x719" data-med="images/lotg-9.jpg" data-med-size="960x719">
+            <div class="bg-cover" style="background-image: url('images/lotg-9.jpg');"></div>
+          </a>
+          <a href="images/lotg-10.jpg" data-size="720x960" data-med="images/lotg-10.jpg" data-med-size="720x960">
+            <div class="bg-cover" style="background-image: url('images/lotg-10.jpg');"></div>
+          </a>
+          <a href="images/lotg-11.jpg" data-size="720x960" data-med="images/lotg-11.jpg" data-med-size="720x960">
+            <div class="bg-cover" style="background-image: url('images/lotg-11.jpg');"></div>
+          </a>
+          <a href="images/lotg-12.png" data-size="851x315" data-med="images/lotg-12.png" data-med-size="851x315">
+            <div class="bg-cover" style="background-image: url('images/lotg-12.png');"></div>
+          </a>
+          <a href="images/lotg-13.png" data-size="724x504" data-med="images/lotg-13.png" data-med-size="724x504">
+            <div class="bg-cover" style="background-image: url('images/lotg-13.png');"></div>
+          </a>
+          <a href="images/lotg-14.png" data-size="753x502" data-med="images/lotg-14.png" data-med-size="753x502">
+            <div class="bg-cover" style="background-image: url('images/lotg-14.png');"></div>
+          </a>
+          <a href="images/lotg-15.png" data-size="711x503" data-med="images/lotg-15.png" data-med-size="711x503">
+            <div class="bg-cover" style="background-image: url('images/lotg-15.png');"></div>
+          </a>
+          <a href="images/lotg-16.png" data-size="724x504" data-med="images/lotg-16.png" data-med-size="724x504">
+            <div class="bg-cover" style="background-image: url('images/lotg-16.png');"></div>
+          </a>
+          <a href="images/lotg-17.png" data-size="725x493" data-med="images/lotg-17.png" data-med-size="725x493">
+            <div class="bg-cover" style="background-image: url('images/lotg-17.png');"></div>
+          </a>
+          <a href="images/lotg-18.png" data-size="722x495" data-med="images/lotg-18.png" data-med-size="722x495">
+            <div class="bg-cover" style="background-image: url('images/lotg-18.png');"></div>
+          </a>
+          <a href="images/lotg-19.png" data-size="1280x800" data-med="images/lotg-19.png" data-med-size="1280x800">
+            <div class="bg-cover" style="background-image: url('images/lotg-19.png');"></div>
+          </a>
+          <a href="images/lotg-20.png" data-size="715x494" data-med="images/lotg-20.png" data-med-size="715x494">
+            <div class="bg-cover" style="background-image: url('images/lotg-20.png');"></div>
+          </a>
+          <a href="images/lotg-21.png" data-size="462x503" data-med="images/lotg-21.png" data-med-size="462x503">
+            <div class="bg-cover" style="background-image: url('images/lotg-21.png');"></div>
           </a>
         </div>
 

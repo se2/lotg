@@ -15,6 +15,7 @@
   <script src="https://use.fontawesome.com/efa828ba0a.js"></script>
 
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/hamburgers.min.css" rel="stylesheet" type="text/css">
 
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -42,6 +43,7 @@
 
   <!-- Site style and scripts -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/about.js"></script>
   <script src="js/scripts.js"></script>
 
   <script src="https://use.typekit.net/nkv1wzn.js"></script>
@@ -60,7 +62,7 @@
 
     <header class="clearfix">
       <div class="container">
-        <a href="//teamloveofthegame.org" class="logo">Love of the Game</a>
+        <a href="/" class="logo">Love of the Game</a>
         <ul class="main-menu social-menu">
           <li>
             <a href="https://www.facebook.com/LOTGSports/" target="_blank">
@@ -72,7 +74,23 @@
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
-          <li>@LOTGSports</li>
+          <li class="hidden-sm hidden-xs">@LOTGSports</li>
+        </ul>
+        <div class="hamburger hamburger--collapse visible-sm visible-xs menu-toggle">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container menu-wrapper">
+        <ul class="main-menu">
+          <li><a href="about.html" class="volunteer">About</a></li>
+          <li><a href="testimonials.html" class="volunteer">Testimonials</a></li>
+          <!-- <li><a href="faq.html" class="volunteer">FAQ</a></li> -->
+          <li><a href="sponsor.html" class="volunteer">Sponsor</a></li>
+          <li><a href="donate.html" class="volunteer">Donate</a></li>
+          <li><a href="volunteer.html" class="volunteer">Volunteer</a></li>
+          <li><a href="rsvp.html" class="volunteer">RSVP</a></li>
         </ul>
       </div>
     </header>
@@ -83,29 +101,54 @@
 
         <h1 class="about-title">Our Team</h1>
 
-        <div class="person-row">
-          <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 visible-xs">
-              <div class="person-avatar bg-cover" style="background-image: url('images/avatar.png');"></div>
-            </div>
-            <div class="col-xs-12 col-sm-8 col-md-8">
-              <div class="person-name">
-                <strong>Kelly Skelton</strong>
-              </div>
-              <div class="person-info">
-                Business Administration (Marketing & Accounting) <br>
-                LOTG Marketing & Public Relations Manager <br> <br>
-                <blockquote>
-                  "I love what sports has done for me. <br>
-                  I would love to pass on my knowledge."
-                </blockquote>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs">
-              <div class="person-avatar bg-cover" style="background-image: url('images/avatar.png');"></div>
-            </div>
-          </div>
-        </div>
+        <script>
+          var getAvatar = function(url, className) {
+            return '<div class="col-xs-12 col-sm-4 col-md-4 '+className+'">' +
+                      '<div class="person-avatar bg-cover" style="background-image: url(\''+url+'\');"></div>' +
+                    '</div>';
+          };
+
+          var getName = function(name) {
+            return '<div class="person-name">' +
+                      '<h4>'+name+'</h4>' +
+                    '</div>';
+          };
+
+          var getInfo = function(data, quote) {
+            var attrs = '';
+
+            if (data === undefined) data = {};
+
+            for (var key in data) {
+              attrs += '<strong style="font-weight: 600;">' + key + '</strong>' + ': ' + data[key] + '<br/>';
+            }
+
+            if (quote !== undefined) {
+              quote = 'Reason For Joining LOTG? <br>' +
+                      '<blockquote>"'+quote+'"</blockquote>';
+            }
+
+            return '<div class="person-info">' + attrs + quote + '</div>';
+          };
+
+          var personOpen = '<div class="person-row"><div class="row">',
+              personClose = '</div></div>',
+              people = '';
+
+          for (var i = 0; i < aboutData.length; i++) {
+            var person = aboutData[i];
+
+            people += personOpen +
+                         getAvatar(person.avatar, 'visible-xs') +
+                         '<div class="col-xs-12 col-sm-8 col-md-8">' +
+                         getName(person.name) +
+                         getInfo(person.info, person.quote) +
+                         '</div>' +
+                         getAvatar(person.avatar, 'hidden-xs') +
+                         personClose;
+          }
+          document.write(people);
+        </script>
 
       </div>
 
