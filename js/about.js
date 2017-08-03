@@ -107,6 +107,6 @@ var aboutData = [
             "Favorite Sport": "Basketball",
             "Hobby": "Shooting Hoops",
         },
-        "quote": "As a freshman at UMass-Lowell in 2015, I came across a Love of the Game panel at a club fair. Having been an active member of Newburyport's Special Olympics program before and during my years in high school, I was thrilled to see that the opportunity to provide fun experiences for children with special needs was available at college. Along with this, I have a younger brother with autism, and I have seen firsthand the impact that such a community service can have on individuals with mental disabilities. I enjoy being a part of and contributing to this team, and offering whatever I can to this cause.",
+        "quote": "As a freshman at UMass-Lowell in 2015, I came across a Love of the Game panel at a club fair. Having been an active member of Newburyport's Special Olympics program before and during my years in high school, I was thrilled to see that the opportunity to provide fun experiences for individuals with special needs was available at college. Along with this, I have a younger brother with autism, and I have seen firsthand the impact that such a community service can have on people with disabilities. I enjoy being a part of and contributing to this team, and offering whatever I can to this cause.",
     }
 ];
